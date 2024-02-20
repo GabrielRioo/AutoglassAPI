@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Autoglass.Api.Migrations
 {
     [DbContext(typeof(AutoglassContext))]
-    [Migration("20240218225710_Initial Migrations")]
-    partial class InitialMigrations
+    [Migration("20240219222553_Initial Migration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,11 +26,9 @@ namespace Autoglass.Api.Migrations
 
             modelBuilder.Entity("Autoglass.Api.Models.Product", b =>
                 {
-                    b.Property<int>("ProductId")
+                    b.Property<Guid>("ProductId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -47,8 +45,8 @@ namespace Autoglass.Api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SupplierId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("SupplierId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("ProductId");
 
@@ -59,11 +57,9 @@ namespace Autoglass.Api.Migrations
 
             modelBuilder.Entity("Autoglass.Api.Models.Supplier", b =>
                 {
-                    b.Property<int>("SupplierCode")
+                    b.Property<Guid>("SupplierId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SupplierCode"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("SupplierCnpj")
                         .IsRequired()
@@ -75,7 +71,7 @@ namespace Autoglass.Api.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
-                    b.HasKey("SupplierCode");
+                    b.HasKey("SupplierId");
 
                     b.HasIndex("SupplierCnpj")
                         .IsUnique();

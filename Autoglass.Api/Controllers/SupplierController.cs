@@ -35,9 +35,7 @@ namespace Autoglass.Api.Controllers
 			await _context.Suppliers.AddAsync(supplier);
 
 			if (!ModelState.IsValid)
-			{
 				return BadRequest(ModelState);
-			}
 
 			try
 			{
@@ -45,9 +43,7 @@ namespace Autoglass.Api.Controllers
 			}
 			catch (Exception ex)
 			{
-				// Log ou lançar a exceção para depuração
-				Console.WriteLine(ex.Message);
-				throw;
+				return BadRequest();
 			}
 
 			return Ok(supplier);

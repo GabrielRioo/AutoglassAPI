@@ -24,11 +24,9 @@ namespace Autoglass.Api.Migrations
 
             modelBuilder.Entity("Autoglass.Api.Models.Product", b =>
                 {
-                    b.Property<int>("ProductId")
+                    b.Property<Guid>("ProductId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -45,8 +43,8 @@ namespace Autoglass.Api.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SupplierId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("SupplierId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("ProductId");
 
@@ -57,11 +55,9 @@ namespace Autoglass.Api.Migrations
 
             modelBuilder.Entity("Autoglass.Api.Models.Supplier", b =>
                 {
-                    b.Property<int>("SupplierCode")
+                    b.Property<Guid>("SupplierId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SupplierCode"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("SupplierCnpj")
                         .IsRequired()
@@ -73,7 +69,7 @@ namespace Autoglass.Api.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
-                    b.HasKey("SupplierCode");
+                    b.HasKey("SupplierId");
 
                     b.HasIndex("SupplierCnpj")
                         .IsUnique();

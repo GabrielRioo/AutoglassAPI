@@ -6,5 +6,5 @@ public class ProductCreateDTO
 	public string Status { get; set; }
 	public DateTime ManufacturingDate { get; set; }
 	public DateTime ExpiryDate { get; set; }
-	public int SupplierId { get; set; }
+	public Guid SupplierId { get; set; }
 }

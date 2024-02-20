@@ -8,7 +8,7 @@ public class SupplierConfig : IEntityTypeConfiguration<Supplier>
 {
 	public void Configure(EntityTypeBuilder<Supplier> builder)
 	{
-		builder.HasKey(s => s.SupplierCode);
+		builder.HasKey(s => s.SupplierId);
 
 		builder.Property(s => s.SupplierDescription)
 			.HasMaxLength(1000);

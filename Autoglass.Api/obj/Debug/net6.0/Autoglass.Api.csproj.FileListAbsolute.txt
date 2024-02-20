@@ -5,6 +5,7 @@ E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\bin\Debug\net
 E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\bin\Debug\net6.0\Autoglass.Api.runtimeconfig.json
 E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\bin\Debug\net6.0\Autoglass.Api.dll
 E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\bin\Debug\net6.0\Autoglass.Api.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\bin\Debug\net6.0\AutoMapper.dll
 E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\bin\Debug\net6.0\Humanizer.dll
 E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -59,4 +60,3 @@ E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\obj\Debug\net
 E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\obj\Debug\net6.0\Autoglass.Api.pdb
 E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\obj\Debug\net6.0\Autoglass.Api.genruntimeconfig.cache
 E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\obj\Debug\net6.0\ref\Autoglass.Api.dll
-E:\Gabriel\3_Estudo\2_Github\Autoglass\Autoglass.Api\Autoglass.Api\bin\Debug\net6.0\AutoMapper.dll

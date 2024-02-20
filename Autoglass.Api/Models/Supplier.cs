@@ -2,7 +2,7 @@
 
 public class Supplier
 {
-	public int SupplierCode { get; set; }
+	public Guid SupplierId { get; set; }
 	public string SupplierDescription { get; set; }
 	public string SupplierCnpj { get; set; }
 
