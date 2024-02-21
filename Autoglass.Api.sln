@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autoglass.Api", "Autoglass.Api\Autoglass.Api.csproj", "{134EB146-B953-4BF1-BE8F-9FCD253A8B67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autoglass.Api", "Autoglass.Api\Autoglass.Api.csproj", "{716C3A1E-FD49-4A7A-8849-F11DEC8C7865}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autoglass.Aplication", "Autoglass.Business\Autoglass.Aplication.csproj", "{BA15A3F5-5003-4A4A-9EB6-D493E3D0C4E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autoglass.Domain", "Autoglass.Domain\Autoglass.Domain.csproj", "{5228204A-315F-47F9-A431-8DFB9A04163C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autoglass.Infra", "Autoglass.Infra\Autoglass.Infra.csproj", "{C266754A-DDB1-45F5-BAF3-C9F678055D7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autoglass.Tests", "Autoglass.Tests\Autoglass.Tests.csproj", "{1080092D-1B96-447C-B28C-27268958D3D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - APi", "1 - APi", "{094D1F10-4694-4EC3-A051-B9FBC581F342}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Aplication", "2 - Aplication", "{09573F5D-39C3-4843-BE6E-B862B0309916}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{25641BD8-5CBC-4CA5-8BED-EBB8A3AA62E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{EAD4EF23-F553-40C4-910F-453F45DE305C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{FA321199-ABFC-4C1B-96BA-C23621B96BC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +29,38 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{134EB146-B953-4BF1-BE8F-9FCD253A8B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{134EB146-B953-4BF1-BE8F-9FCD253A8B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{134EB146-B953-4BF1-BE8F-9FCD253A8B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{134EB146-B953-4BF1-BE8F-9FCD253A8B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716C3A1E-FD49-4A7A-8849-F11DEC8C7865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716C3A1E-FD49-4A7A-8849-F11DEC8C7865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716C3A1E-FD49-4A7A-8849-F11DEC8C7865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716C3A1E-FD49-4A7A-8849-F11DEC8C7865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA15A3F5-5003-4A4A-9EB6-D493E3D0C4E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA15A3F5-5003-4A4A-9EB6-D493E3D0C4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA15A3F5-5003-4A4A-9EB6-D493E3D0C4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA15A3F5-5003-4A4A-9EB6-D493E3D0C4E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5228204A-315F-47F9-A431-8DFB9A04163C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5228204A-315F-47F9-A431-8DFB9A04163C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5228204A-315F-47F9-A431-8DFB9A04163C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5228204A-315F-47F9-A431-8DFB9A04163C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C266754A-DDB1-45F5-BAF3-C9F678055D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C266754A-DDB1-45F5-BAF3-C9F678055D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C266754A-DDB1-45F5-BAF3-C9F678055D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C266754A-DDB1-45F5-BAF3-C9F678055D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1080092D-1B96-447C-B28C-27268958D3D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1080092D-1B96-447C-B28C-27268958D3D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1080092D-1B96-447C-B28C-27268958D3D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1080092D-1B96-447C-B28C-27268958D3D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{716C3A1E-FD49-4A7A-8849-F11DEC8C7865} = {094D1F10-4694-4EC3-A051-B9FBC581F342}
+		{BA15A3F5-5003-4A4A-9EB6-D493E3D0C4E8} = {09573F5D-39C3-4843-BE6E-B862B0309916}
+		{5228204A-315F-47F9-A431-8DFB9A04163C} = {25641BD8-5CBC-4CA5-8BED-EBB8A3AA62E2}
+		{C266754A-DDB1-45F5-BAF3-C9F678055D7C} = {EAD4EF23-F553-40C4-910F-453F45DE305C}
+		{1080092D-1B96-447C-B28C-27268958D3D6} = {FA321199-ABFC-4C1B-96BA-C23621B96BC0}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {76EB1CAE-6C17-40B6-987D-16A95ECC9238}
+		SolutionGuid = {5B0197DF-D24A-4997-AD7C-F19F43E965D7}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "6RlY4H2bXe0oRSZqXlDVs2HY+QhSAJBnq3TCbFWUkhq+UZgEBNVOJqs4cqBBbqycLP+QrSrM0djKf8UMSWmPEA==",
+  "success": true,
+  "projectFilePath": "E:\\Gabriel\\3_Estudo\\2_Github\\Autoglass\\New\\Autoglass.Api\\Autoglass.Tests\\Autoglass.Tests.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.grapecity.com/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

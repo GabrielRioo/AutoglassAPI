@@ -1,0 +1,12 @@
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\bin\Debug\net6.0\Autoglass.Tests.deps.json
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\bin\Debug\net6.0\Autoglass.Tests.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\bin\Debug\net6.0\Autoglass.Tests.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\obj\Debug\net6.0\Autoglass.Tests.csproj.AssemblyReference.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\obj\Debug\net6.0\Autoglass.Tests.GeneratedMSBuildEditorConfig.editorconfig
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\obj\Debug\net6.0\Autoglass.Tests.AssemblyInfoInputs.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\obj\Debug\net6.0\Autoglass.Tests.AssemblyInfo.cs
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\obj\Debug\net6.0\Autoglass.Tests.csproj.CoreCompileInputs.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\obj\Debug\net6.0\Autoglass.Tests.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\obj\Debug\net6.0\refint\Autoglass.Tests.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\obj\Debug\net6.0\Autoglass.Tests.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Tests\obj\Debug\net6.0\ref\Autoglass.Tests.dll

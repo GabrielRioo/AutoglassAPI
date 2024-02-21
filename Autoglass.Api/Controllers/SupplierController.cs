@@ -1,52 +1,48 @@
-﻿using Autoglass.Api.Data;
-using Autoglass.Api.DTOs;
-using Autoglass.Api.Models;
-using AutoMapper;
+﻿using Autoglass.Api.Models;
+using Autoglass.Business.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace Autoglass.Api.Controllers
 {
-	[Route("api/[controller]")]
+	[Route("api/[controller")]
 	[ApiController]
 	public class SupplierController : ControllerBase
 	{
-		private readonly AutoglassContext _context;
-		private readonly IMapper _mapper;
-		public SupplierController(AutoglassContext context, IMapper mapper)
+		private readonly IAplicationSupplier _IAplicationSupplier;
+
+		public SupplierController(IAplicationSupplier iAplicationSupplier)
 		{
-			_context = context;
-			_mapper = mapper;
+			_IAplicationSupplier = iAplicationSupplier;
 		}
 
-		[HttpGet]
-		[Route("/supplier")]
-		public async Task<ActionResult> GetSupplier()
+		[HttpGet("/api/CreateSupplier")]
+		public async Task<IActionResult> GetSupplierById(Guid supplierId)
 		{
-			return Ok(await _context.Suppliers.ToListAsync());
+			var supplierExist = await _IAplicationSupplier.ExistsSupplier(supplierId);
+			if (supplierExist)
+			{
+				var result = await _IAplicationSupplier.GetSupplierById(supplierId);
+				return Ok(result);
+			}
+			else
+			{
+				return BadRequest("Suppier doen't exists");
+			}
+
 		}
 
-		[HttpPost]
-		[Route("/supplier")]
-		public async Task<ActionResult> CreateSupplier(SupplierCreateDTO supplierDTO)
+		[HttpPost("/api/CreateSupplier")]
+		public async Task<IActionResult> CreateSupplier([FromBody] SupplierDTO supplierDTO)
 		{
-			var supplier = _mapper.Map<Supplier>(supplierDTO);
+			if (string.IsNullOrWhiteSpace(supplierDTO.SupplierDescription) || string.IsNullOrWhiteSpace(supplierDTO.SupplierCnpj))
+				return BadRequest("All fields are required");
 
-			await _context.Suppliers.AddAsync(supplier);
+			var result = await _IAplicationSupplier.CreateSupplier(supplierDTO.SupplierDescription, supplierDTO.SupplierCnpj);
 
-			if (!ModelState.IsValid)
-				return BadRequest(ModelState);
-
-			try
-			{
-				await _context.SaveChangesAsync();
-			}
-			catch (Exception ex)
-			{
-				return BadRequest();
-			}
-
-			return Ok(supplier);
+			if (result)
+				return Ok("Supplier successfully created");
+			else
+				return BadRequest("Error to create supplier");
 		}
 	}
 }

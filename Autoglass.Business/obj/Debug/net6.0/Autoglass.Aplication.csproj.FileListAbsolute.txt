@@ -1,0 +1,15 @@
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\bin\Debug\net6.0\Autoglass.Aplication.deps.json
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\bin\Debug\net6.0\Autoglass.Aplication.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\bin\Debug\net6.0\Autoglass.Aplication.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\bin\Debug\net6.0\Autoglass.Domain.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\bin\Debug\net6.0\Autoglass.Domain.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\obj\Debug\net6.0\Autoglass.Aplication.csproj.AssemblyReference.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\obj\Debug\net6.0\Autoglass.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\obj\Debug\net6.0\Autoglass.Aplication.AssemblyInfoInputs.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\obj\Debug\net6.0\Autoglass.Aplication.AssemblyInfo.cs
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\obj\Debug\net6.0\Autoglass.Aplication.csproj.CoreCompileInputs.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\obj\Debug\net6.0\Autoglass.Aplication.csproj.CopyComplete
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\obj\Debug\net6.0\Autoglass.Aplication.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\obj\Debug\net6.0\refint\Autoglass.Aplication.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\obj\Debug\net6.0\Autoglass.Aplication.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Business\obj\Debug\net6.0\ref\Autoglass.Aplication.dll

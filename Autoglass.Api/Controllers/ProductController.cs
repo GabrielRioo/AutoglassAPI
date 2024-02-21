@@ -1,129 +1,105 @@
-﻿using Autoglass.Api.Data;
-using Autoglass.Api.DTOs;
+﻿using Autoglass.Api.DTOs;
 using Autoglass.Api.Models;
+using Autoglass.Business.Interfaces;
+using Autoglass.Domain.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace Autoglass.Api.Controllers
 {
-	[Route("api/[controller]")]
+	[Route("api/[controller")]
 	[ApiController]
 	public class ProductController : ControllerBase
 	{
-		private readonly AutoglassContext _context;
+		private readonly IAplicationProduct _IAplicationProduct;
 		private readonly IMapper _mapper;
-		public ProductController(AutoglassContext context, IMapper mapper)
+
+		public ProductController(IAplicationProduct IAplicationProduct, IMapper mapper)
 		{
-			_context = context;
+			_IAplicationProduct = IAplicationProduct;
 			_mapper = mapper;
 		}
 
-		[HttpGet]
-		[Route("/products")]
-		public async Task<ActionResult> GetProductById(Guid productId)
+		[HttpGet("/api/GetProduct")]
+		public async Task<IActionResult> GetProductById(Guid productId)
 		{
-			var dbProduct = await _context.Products.FindAsync(productId);
+			//var productExist = await _IAplicationProduct.ExistsProduct(productId);
 
-			if (dbProduct == null)
-				return NotFound();
+			var result = await _IAplicationProduct.GetProductById(productId);
 
-			return Ok(dbProduct);
+			if (result != null)
+				return Ok(result);
+			else
+				return BadRequest("Product doen't exists");
 		}
 
-		[HttpGet]
-		[Route("/products")]
-		public async Task<ActionResult> GetProducts()
+		[HttpGet("/api/GetAllProduct")]
+		public async Task<IActionResult> GetAllProducts(
+			[FromQuery] string? description,
+			[FromQuery] bool? status,
+			[FromQuery] int pages = 1,
+			[FromQuery] int pageSize = 2)
 		{
-			return Ok(await _context.Products.ToListAsync());
+			Expression<Func<Product, bool>> filter = p => true;
+
+			if (!string.IsNullOrEmpty(description))
+				filter = p => p.Description == description;
+			else if (status.HasValue)
+				filter = p => p.Status == status;
+			else if(!string.IsNullOrEmpty(description) && status.HasValue)
+				filter = p => p.Description == description || p.Status == status;
+
+			//Expression<Func<Product, bool>> filter = p => p.Description == description || p.Status == status;
+			var result = await _IAplicationProduct.GetAll(pages, pageSize ,filter);
+
+			if (result != null)
+				return Ok(result);
+			else
+				return BadRequest("Product doen't exists");
 		}
 
-		[HttpPost]
-		[Route("/products")]
-		public async Task<ActionResult> CreateProduct([FromBody] ProductCreateDTO productDTO)
+		[HttpPost("/api/CreateProduct")]
+		public async Task<IActionResult> CreateProduct([FromBody] ProductCreateDTO productDTO)
 		{
-			if (productDTO.ManufacturingDate < productDTO.ExpiryDate)
-				return BadRequest(new
-				{
-					success = false,
-					message = $"The manufacturing date cannot be smaller than expiry date."
-				});
+			if (string.IsNullOrWhiteSpace(productDTO.Description))
+				return BadRequest("All fields are required");
 
 			Product product = _mapper.Map<Product>(productDTO);
 
-			await _context.Products.AddAsync(product);
+			var result = await _IAplicationProduct.CreateProduct(product);
 
-			if (!ModelState.IsValid)
-				return BadRequest(ModelState);
-
-			try
-			{
-				await _context.SaveChangesAsync();
-			}
-			catch (Exception ex)
-			{
-				return BadRequest();
-			}
-
-			return Ok(new
-			{
-				data = productDTO,
-				success = true,
-				message = $"product created with id: {product.ProductId}"
-			});
+			if (result)
+				return Ok("Product successfully created");
+			else
+				return BadRequest("Error to create product");
 		}
 
-		[HttpPut]
-		[Route("/products")]
-		public async Task<ActionResult> UpdateProduct([FromBody] ProductUpdateDTO productDTO)
+		[HttpPut("/api/UpdateProduct")]
+		public async Task<IActionResult> UpdateProduct([FromBody] ProductUpdateDTO productDTO)
 		{
-			if (productDTO.ManufacturingDate < productDTO.ExpiryDate)
-				return BadRequest(new
-				{
-					success = false,
-					message = $"The manufacturing date cannot be smaller than expiry date."
-				});
+			Product product = _mapper.Map<Product>(productDTO);
 
-			var dbProduct = await _context.Products.FindAsync(productDTO.ProductId);
+			var result = await _IAplicationProduct.UpdateProduct(product);
 
-			if (dbProduct == null)
-				return NotFound();
-			
-			dbProduct.Description = productDTO.Description;
-			dbProduct.Status = productDTO.Status;
-			dbProduct.ManufacturingDate = productDTO.ManufacturingDate;
-			dbProduct.ExpiryDate = productDTO.ExpiryDate;
-			dbProduct.SupplierId = productDTO.SupplierId;
-
-			await _context.SaveChangesAsync();
-
-			return Ok(new
-			{
-				data = productDTO,
-				success = true,
-				message = $"product with id: {dbProduct.ProductId} updated"
-			});
+			if (result)
+				return Ok("Product successfully updated");
+			else
+				return BadRequest("Error to update product");
 		}
 
-		[HttpDelete]
-		[Route("/products")]
-		public async Task<ActionResult> DeleteProduct(Guid productId)
+		[HttpDelete("/api/DeleteProduct")]
+		public async Task<IActionResult> DeleteProduct(ProductDeleteDTO productDTO)
 		{
-			var dbProduct = await _context.Products.FindAsync(productId);
+			Product product = _mapper.Map<Product>(productDTO);
 
-			if (dbProduct == null)
-				return NotFound();
+			var result = await _IAplicationProduct.DeleteProduct(product);
 
-			dbProduct.Status = "Inative";
-			//_context.Products.Remove(dbProduct);
-
-			await _context.SaveChangesAsync();
-
-			return Ok(new
-			{
-				success = true,
-				message = $"product with id: {dbProduct.ProductId} deleted"
-			});
+			if (result)
+				return Ok("Product successfully deleted");
+			else
+				return BadRequest("Error to delete product");
 		}
 	}
 }

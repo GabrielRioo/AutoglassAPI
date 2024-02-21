@@ -1,0 +1,14 @@
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\bin\Debug\net6.0\Autoglass.Domain.deps.json
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\bin\Debug\net6.0\Autoglass.Domain.runtimeconfig.json
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\bin\Debug\net6.0\Autoglass.Domain.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\bin\Debug\net6.0\Autoglass.Domain.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\obj\Debug\net6.0\Autoglass.Domain.csproj.AssemblyReference.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\obj\Debug\net6.0\Autoglass.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\obj\Debug\net6.0\Autoglass.Domain.AssemblyInfoInputs.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\obj\Debug\net6.0\Autoglass.Domain.AssemblyInfo.cs
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\obj\Debug\net6.0\Autoglass.Domain.csproj.CoreCompileInputs.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\obj\Debug\net6.0\Autoglass.Domain.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\obj\Debug\net6.0\refint\Autoglass.Domain.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\obj\Debug\net6.0\Autoglass.Domain.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\obj\Debug\net6.0\Autoglass.Domain.genruntimeconfig.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Domain\obj\Debug\net6.0\ref\Autoglass.Domain.dll

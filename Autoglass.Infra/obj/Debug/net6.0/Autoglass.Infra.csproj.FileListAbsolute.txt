@@ -1,0 +1,17 @@
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\bin\Debug\net6.0\Autoglass.Infra.deps.json
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\bin\Debug\net6.0\Autoglass.Infra.runtimeconfig.json
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\bin\Debug\net6.0\Autoglass.Infra.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\bin\Debug\net6.0\Autoglass.Infra.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\bin\Debug\net6.0\Autoglass.Domain.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\bin\Debug\net6.0\Autoglass.Domain.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\Autoglass.Infra.csproj.AssemblyReference.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\Autoglass.Infra.GeneratedMSBuildEditorConfig.editorconfig
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\Autoglass.Infra.AssemblyInfoInputs.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\Autoglass.Infra.AssemblyInfo.cs
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\Autoglass.Infra.csproj.CoreCompileInputs.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\Autoglass.Infra.csproj.CopyComplete
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\Autoglass.Infra.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\refint\Autoglass.Infra.dll
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\Autoglass.Infra.pdb
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\Autoglass.Infra.genruntimeconfig.cache
+E:\Gabriel\3_Estudo\2_Github\Autoglass\New\Autoglass.Api\Autoglass.Infra\obj\Debug\net6.0\ref\Autoglass.Infra.dll
